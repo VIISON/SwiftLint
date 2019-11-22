@@ -1193,6 +1193,13 @@ extension ReturnArrowWhitespaceRuleTests {
     ]
 }
 
+extension ReturnStatementSpacingRuleTests {
+    static var allTests: [(String, (ReturnStatementSpacingRuleTests) -> () throws -> Void)] = [
+        ("testWithDefaultConfiguration", testWithDefaultConfiguration),
+        ("testAllowCommentConfigurationDisabled", testAllowCommentConfigurationDisabled)
+    ]
+}
+
 extension RuleConfigurationTests {
     static var allTests: [(String, (RuleConfigurationTests) -> () throws -> Void)] = [
         ("testNameConfigurationSetsCorrectly", testNameConfigurationSetsCorrectly),
@@ -1741,6 +1748,7 @@ XCTMain([
     testCase(RequiredDeinitRuleTests.allTests),
     testCase(RequiredEnumCaseRuleTestCase.allTests),
     testCase(ReturnArrowWhitespaceRuleTests.allTests),
+    testCase(ReturnStatementSpacingRuleTests.allTests),
     testCase(RuleConfigurationTests.allTests),
     testCase(RuleTests.allTests),
     testCase(RulesTests.allTests),

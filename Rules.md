@@ -139,6 +139,7 @@
 * [Required Deinit](#required-deinit)
 * [Required Enum Case](#required-enum-case)
 * [Returning Whitespace](#returning-whitespace)
+* [Return statement spacing](#return-statement-spacing)
 * [Shorthand Operator](#shorthand-operator)
 * [Single Test Class](#single-test-class)
 * [Min or Max over Sorted First or Last](#min-or-max-over-sorted-first-or-last)
@@ -18395,6 +18396,199 @@ var abc = {(param: Int)↓ ->Bool in }
 ```swift
 var abc = {(param: Int)↓->Bool in }
 
+```
+
+</details>
+
+
+
+## Return statement spacing
+
+Identifier | Enabled by default | Supports autocorrection | Kind | Analyzer | Minimum Swift Compiler Version
+--- | --- | --- | --- | --- | ---
+`return_statement_spacing` | Disabled | No | style | No | 3.0.0 
+
+`return` statements must be preceded by a single empty line.
+
+### Examples
+
+<details>
+<summary>Non Triggering Examples</summary>
+
+```swift
+func foo() {
+    return
+}
+```
+
+```swift
+func foo() -> Int {
+    return 0
+}
+```
+
+```swift
+func foo() {
+    //
+    return
+}
+```
+
+```swift
+func foo() {
+    /**/
+    return
+}
+```
+
+```swift
+func foo() {
+    /*
+        Comment
+    */
+    return
+}
+```
+
+```swift
+func foo() {
+    //
+    // Comment
+    //
+    return
+}
+```
+
+```swift
+func foo() {
+    // Comment
+    return
+}
+```
+
+```swift
+func foo() {
+    // Comment
+
+    return
+}
+```
+
+```swift
+func foo() {
+    /* comment */ return // comment
+}
+```
+
+```swift
+func foo() {
+    let a = 10
+
+    return
+}
+```
+
+```swift
+func foo() {
+    let a = 10
+
+    // Comment
+    return
+}
+```
+
+```swift
+func foo() -> Int {
+    if true {
+        return 0
+    } else {
+        return 1
+    }
+}
+```
+
+```swift
+func foo() -> Int {
+    if true {
+        // Comment
+        return 0
+    } else {
+        return 1
+    }
+}
+```
+
+```swift
+let foo = {
+    return 0
+}
+```
+
+```swift
+let foo = {
+    // Comment
+    return 0
+}
+```
+
+```swift
+let foo = {
+    let a = 10
+
+    return 0
+}
+```
+
+```swift
+[].map = { return 0 }
+```
+
+```swift
+[].map = { /* Comment */ return 0 }
+```
+
+</details>
+<details>
+<summary>Triggering Examples</summary>
+
+```swift
+func foo() {
+    let a = 10
+    return
+}
+```
+
+```swift
+func foo() {
+    let a = 10
+    // Comment
+    return
+}
+```
+
+```swift
+func foo() -> Int {
+    if true {
+        let a = 10
+        return a
+    } else {
+        return 1
+    }
+}
+```
+
+```swift
+let foo = {
+    let a = 10
+    return 0
+}
+```
+
+```swift
+[].map = {
+    let a = 10
+    return a
+}
 ```
 
 </details>

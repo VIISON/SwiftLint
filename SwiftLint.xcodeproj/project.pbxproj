@@ -198,6 +198,10 @@
 		A1A6F3F21EE319ED00A9F9E2 /* ObjectLiteralConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A6F3F11EE319ED00A9F9E2 /* ObjectLiteralConfiguration.swift */; };
 		A3184D56215BCEFF00621EA2 /* LegacyRandomRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3184D55215BCEFF00621EA2 /* LegacyRandomRule.swift */; };
 		A73469421FB121BA009B57C7 /* CallPairRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73469401FB12149009B57C7 /* CallPairRule.swift */; };
+		B1FD3AAC2387BF6E00CE121E /* ReturnStatementSpacingRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD3AAB2387BF6E00CE121E /* ReturnStatementSpacingRule.swift */; };
+		B1FD3AB023884ACF00CE121E /* ReturnStatementSpacingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD3AAF23884ACF00CE121E /* ReturnStatementSpacingConfiguration.swift */; };
+		B1FD3AB223884D3E00CE121E /* ReturnStatementSpacingRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD3AB123884D3E00CE121E /* ReturnStatementSpacingRuleTests.swift */; };
+		B1FD3AB4238853C000CE121E /* ReturnStatementSpacingRuleExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FD3AB3238853C000CE121E /* ReturnStatementSpacingRuleExamples.swift */; };
 		B25DCD0B1F7E9F9E0028A199 /* MultilineArgumentsRuleExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25DCD091F7E9BB50028A199 /* MultilineArgumentsRuleExamples.swift */; };
 		B25DCD0C1F7E9FA20028A199 /* MultilineArgumentsRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25DCD071F7E9B5F0028A199 /* MultilineArgumentsRule.swift */; };
 		B25DCD0E1F7EF2280028A199 /* MultilineArgumentsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25DCD0D1F7EF2280028A199 /* MultilineArgumentsConfiguration.swift */; };
@@ -685,6 +689,10 @@
 		A1A6F3F11EE319ED00A9F9E2 /* ObjectLiteralConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectLiteralConfiguration.swift; sourceTree = "<group>"; };
 		A3184D55215BCEFF00621EA2 /* LegacyRandomRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyRandomRule.swift; sourceTree = "<group>"; };
 		A73469401FB12149009B57C7 /* CallPairRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallPairRule.swift; sourceTree = "<group>"; };
+		B1FD3AAB2387BF6E00CE121E /* ReturnStatementSpacingRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnStatementSpacingRule.swift; sourceTree = "<group>"; };
+		B1FD3AAF23884ACF00CE121E /* ReturnStatementSpacingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnStatementSpacingConfiguration.swift; sourceTree = "<group>"; };
+		B1FD3AB123884D3E00CE121E /* ReturnStatementSpacingRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnStatementSpacingRuleTests.swift; sourceTree = "<group>"; };
+		B1FD3AB3238853C000CE121E /* ReturnStatementSpacingRuleExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnStatementSpacingRuleExamples.swift; sourceTree = "<group>"; };
 		B25DCD071F7E9B5F0028A199 /* MultilineArgumentsRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilineArgumentsRule.swift; sourceTree = "<group>"; };
 		B25DCD091F7E9BB50028A199 /* MultilineArgumentsRuleExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilineArgumentsRuleExamples.swift; sourceTree = "<group>"; };
 		B25DCD0D1F7EF2280028A199 /* MultilineArgumentsConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilineArgumentsConfiguration.swift; sourceTree = "<group>"; };
@@ -1040,6 +1048,7 @@
 				009E09291DFEE4DD00B588A7 /* ProhibitedSuperConfiguration.swift */,
 				3BB47D821C514E8100AE6A10 /* RegexConfiguration.swift */,
 				B89F3BC71FD5ED7D00931E59 /* RequiredEnumCaseRuleConfiguration.swift */,
+				B1FD3AAF23884ACF00CE121E /* ReturnStatementSpacingConfiguration.swift */,
 				3B0B14531C505D6300BE82F7 /* SeverityConfiguration.swift */,
 				3BCC04CF1C4F56D3006073C3 /* SeverityLevelsConfiguration.swift */,
 				725094881D0855760039B353 /* StatementModeConfiguration.swift */,
@@ -1227,6 +1236,8 @@
 				D47F31141EC918B600E3E1CA /* ProtocolPropertyAccessorsOrderRule.swift */,
 				D4C889701E385B7B00BAE88D /* RedundantDiscardableLetRule.swift */,
 				E57B23C01B1D8BF000DEA512 /* ReturnArrowWhitespaceRule.swift */,
+				B1FD3AAB2387BF6E00CE121E /* ReturnStatementSpacingRule.swift */,
+				B1FD3AB3238853C000CE121E /* ReturnStatementSpacingRuleExamples.swift */,
 				D4D5A5FE1E1F3A1C00D15E0C /* ShorthandOperatorRule.swift */,
 				629C60D81F43906700B4AF92 /* SingleTestClassRule.swift */,
 				D286EC001E02DA190003CF72 /* SortedImportsRule.swift */,
@@ -1514,6 +1525,7 @@
 				E86396C61BADAFE6002C9E88 /* ReporterTests.swift */,
 				B89F3BCB1FD5EDA900931E59 /* RequiredEnumCaseRuleTestCase.swift */,
 				3B12C9BE1C3209AC000B423F /* Resources */,
+				B1FD3AB123884D3E00CE121E /* ReturnStatementSpacingRuleTests.swift */,
 				3BCC04D31C502BAB006073C3 /* RuleConfigurationTests.swift */,
 				D45255C71F0932F8003C9B56 /* RuleDescription+Examples.swift */,
 				E8BB8F9B1B17DE3B00199606 /* RulesTests.swift */,
@@ -1991,6 +2003,7 @@
 				BFF028AE1CBCF8A500B38A9D /* TrailingWhitespaceConfiguration.swift in Sources */,
 				3B034B6E1E0BE549005D49A9 /* LineLengthConfiguration.swift in Sources */,
 				B25DCD0C1F7E9FA20028A199 /* MultilineArgumentsRule.swift in Sources */,
+				B1FD3AB023884ACF00CE121E /* ReturnStatementSpacingConfiguration.swift in Sources */,
 				6258783B1FFC458100AC34F2 /* DiscouragedObjectLiteralRule.swift in Sources */,
 				62A3E95D209E084000547A86 /* EmptyXCTestMethodRule.swift in Sources */,
 				D4C4A34C1DEA4FF000E0E04C /* AttributesConfiguration.swift in Sources */,
@@ -2016,6 +2029,7 @@
 				827009FF20FE26C500ECA185 /* TypeContentsOrderRule.swift in Sources */,
 				E88198551BEA949A00333A11 /* ControlStatementRule.swift in Sources */,
 				584B0D3A2112BA78002F7E25 /* SonarQubeReporter.swift in Sources */,
+				B1FD3AAC2387BF6E00CE121E /* ReturnStatementSpacingRule.swift in Sources */,
 				E57B23C11B1D8BF000DEA512 /* ReturnArrowWhitespaceRule.swift in Sources */,
 				D4246D6D1F30D8620097E658 /* PrivateOverFilePrivateRuleConfiguration.swift in Sources */,
 				3A915E5B20A1543700519F3A /* ClosureEndIndentationRuleExamples.swift in Sources */,
@@ -2179,6 +2193,7 @@
 				82DB560021008F54001C62FF /* TypeContentsOrderConfiguration.swift in Sources */,
 				E88198421BEA929F00333A11 /* NestingRule.swift in Sources */,
 				D46A317F1F1CEDCD00AF914A /* UnneededParenthesesInClosureArgumentRule.swift in Sources */,
+				B1FD3AB4238853C000CE121E /* ReturnStatementSpacingRuleExamples.swift in Sources */,
 				D4470D591EB6B4D1008A1B2E /* EmptyEnumArgumentsRule.swift in Sources */,
 				8F0856EB22DA8508001FF4D4 /* UnusedDeclarationRule.swift in Sources */,
 				264E080F2248BA2800ADC4C5 /* RuleStorage.swift in Sources */,
@@ -2295,6 +2310,7 @@
 				47ACC89C1E7DCFA00088EEB2 /* ImplicitlyUnwrappedOptionalRuleTests.swift in Sources */,
 				E81ADD741ED6052F000CD451 /* CommandTests.swift in Sources */,
 				29FFC37D1F157BDE007E4825 /* FileLengthRuleTests.swift in Sources */,
+				B1FD3AB223884D3E00CE121E /* ReturnStatementSpacingRuleTests.swift in Sources */,
 				006204DE1E1E4E0A00FFFBE1 /* VerticalWhitespaceRuleTests.swift in Sources */,
 				02FD8AEF1BFC18D60014BFFB /* ExtendedNSStringTests.swift in Sources */,
 				12E3D4DC2042729300B3E30E /* ExplicitTypeInterfaceRuleTests.swift in Sources */,
